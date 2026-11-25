@@ -1,0 +1,29 @@
+name: Cambio o mejora
+description: Pedir un cambio en la infraestructura, en un workflow o en la documentación
+title: "feat: "
+labels: ["tipo: mejora"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué se pide
+      description: El cambio, en una o dos frases.
+    validations:
+      required: true
+  - type: textarea
+    id: por-que
+    attributes:
+      label: Por qué
+      description: Qué problema resuelve o qué permite hacer.
+    validations:
+      required: true
+  - type: textarea
+    id: alcance
+    attributes:
+      label: A qué afecta
+      description: Repos, entornos o clientes afectados, si lo sabes.
+  - type: input
+    id: fecha
+    attributes:
+      label: Para cuándo
+      description: Solo si hay una fecha que cumplir.
